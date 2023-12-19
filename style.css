@@ -3,35 +3,20 @@ body {
     background-image: url('/image/achtergrond.jpg');
     background-size: cover;
 }
- 
-.wrap {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
- 
-.wrap-inner {
-    position: relative;
-    display: inline-block;
- 
-}
- 
+
 .game {
     margin-top: 10px;
 }
- 
+
 .cell {
- 
+
     display: inline-block;
     position: relative;
     width: 150px;
     height: 150px;
     overflow: hidden;
 }
- 
+
 .gopher,
 .bomb {
     width: 150px;
@@ -40,47 +25,50 @@ body {
     position: absolute;
     transition: bottom 1s;
 }
- 
+
 .start {
     margin: 10px;
     padding: 10px;
     background-color: green;
     font-family: sans-serif;
     font-size: larger;
- 
+    position: absolute;
+    top: 0;
+    left: 0;
+
 }
- 
+
 .info {
-    background-color: lightblue;
+    background-color: rgba(173, 216, 230, 0);
     padding: 5px;
     font-size: larger;
-    padding-left: 120px;
+    text-align: center;
 }
- 
+
 .gopher {
     background: url(image/mole.png) center center no-repeat;
     background-size: 150px 150px;
 }
- 
+
 .dead {
-    background: url(image/mole-whacked.png) center center no-repeat;
+    background: url(image/mole-wacked.png) center center no-repeat;
     background-size: 150px 150px;
 }
- 
+
 .bomb {
     background: url(image/bomb.png) center center no-repeat;
     background-size: 150px 150px;
 }
- 
+
 .boom {
     background: url(image/explode.png) center center no-repeat;
     background-size: 150px 150px;
 }
- 
+
 .hidden {
     bottom: -150px;
 }
- 
+
 .hole {
     background: url(image/mole-hole.png) center center no-repeat;
     width: 150px;
@@ -89,7 +77,7 @@ body {
     bottom: 0;
     background-size: 150px 110px;
 }
- 
+
 .hole-front {
     background: url(image/mole-hole-front.png) center center no-repeat;
     width: 150px;
@@ -98,46 +86,46 @@ body {
     bottom: 0;
     background-size: 150px 20px;
 }
- 
+
 @media screen and (max-width: 539px) {
     .cell {
         width: 100px;
         height: 100px;
     }
- 
+
     .gopher,
     .bomb {
         width: 100px;
         height: 100px;
     }
- 
+
     .gopher {
         background-size: 100px 100px;
     }
- 
+
     .dead {
         background-size: 100px 100px;
     }
- 
+
     .bomb {
         background-size: 90px 100px;
     }
- 
+
     .boom {
         background: url(image/explode.png) center center no-repeat;
         background-size: 100px 100px;
     }
- 
+
     .hidden {
         bottom: -100px;
     }
- 
+
     .hole {
         width: 100px;
         height: 80px;
         background-size: 100px 80px;
     }
- 
+
     .hole-front {
         width: 100px;
         height: 18px;
